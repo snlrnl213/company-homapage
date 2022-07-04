@@ -2,8 +2,10 @@ function Navbar(){
     return <nav className="nav">
         <a href="/" className="site-title">Site Name</a>
         <ul>
-            <li>
+            <li className="active">
                 <a href="/pricling">Pricing</a>
+            </li>
+            <li> 
                 <a href="/about">About</a>
             </li>
         </ul>
