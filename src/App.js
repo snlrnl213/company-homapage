@@ -13,8 +13,8 @@ import Qna from "./routes/Qna"
 function App() {
   return (
     <div>
-      <Router>
-        {/* <Navbar /> */}
+      <Router basename={process.env.PUBLIC_URL}>
+        <Navbar />
         <div className="container">
           <Switch>
             <Route path="/qna">
