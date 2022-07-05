@@ -6,9 +6,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom"
-import Home from "./pages/Home"
-import Introduce from "./pages/Introduce"
-import Qna from "./pages/Qna"
+import Home from "./routes/Home"
+import Introduce from "./routes/Introduce"
+import Qna from "./routes/Qna"
 
 function App() {
   return (
