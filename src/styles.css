@@ -5,14 +5,20 @@
 body {
     margin: 0;
 }
+
+.container{
+    margin: 1rem;
+    text-align: center;
+}
+
 .nav{
     background-color: #333;
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 2rem;
-    padding: 01rem;
+    padding: 0 1rem;
 }
 
 .site-title{
@@ -30,6 +36,10 @@ body {
 .nav a{
     color: inherit;
     text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
 }
 
 .nav li.active{
