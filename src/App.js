@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="container">
           <Switch>
             <Route path="/qna">
