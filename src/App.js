@@ -13,9 +13,9 @@ import Qna from "./routes/Qna"
 function App() {
   return (
     <div>
-      <Navbar />
-      <div className="container">
-        <Router>
+      <Router>
+        <Navbar />
+        <div className="container">
           <Switch>
             <Route path="/qna">
               <Qna />
@@ -27,8 +27,8 @@ function App() {
               <Home />
             </Route>
           </Switch>
-        </Router>
-      </div>
+        </div>
+      </Router>
     </div>
   );
 }
