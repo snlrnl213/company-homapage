@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonHome from './ButtonHome';
+import { Link } from 'react-router-dom';
  
 function BoardNew() {
  
@@ -15,8 +15,12 @@ function BoardNew() {
                         <textarea className='inputContent' placeholder='내용을 입력하세요' />
                     </div>
                     <div>
-                        <button type='submit'>취소</button>
-                        <button type='submit'>등록</button>
+                        <Link to='/qna'>
+                            <button type='submit'>취소</button>
+                        </Link>
+                        <Link to='/qna'>
+                            <button type='submit'>등록</button>
+                        </Link>
                     </div>
                 </form>
             </div>
