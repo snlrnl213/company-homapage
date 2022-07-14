@@ -1,3 +1,5 @@
+import BoardList from "../components/BoardList";
+
 export default function Qna(){
-    return <h1>QnA</h1>
+    return <BoardList/>
 }

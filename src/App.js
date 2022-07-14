@@ -1,4 +1,5 @@
 import Navbar from "./main/Navbar"
+import Footer from "./main/Footer"
 import "./styles.css"
 import {
   //npm i react-router-dom@5.3.0
@@ -9,6 +10,8 @@ import {
 import Home from "./routes/Home"
 import Introduce from "./routes/Introduce"
 import Qna from "./routes/Qna"
+import QnaNew from "./routes/QnaNew"
+
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Navbar />
         <div className="container">
           <Switch>
+            <Route path="/qna/new">
+              <QnaNew />
+            </Route>
             <Route path="/qna">
               <Qna />
             </Route>
@@ -28,6 +34,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+          <Footer/>
       </Router>
     </div>
   );
